@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="375dp"
+        android:layout_height="420dp"
+        android:text="Indem Sie auf Start drücken, werden ihr Standort und alle in der Nähe befindlichen Überwachungskameras lokalisiert.
+        Sobald Sie in die Nähe einer Kamera kommen, erhalten Sie die Meldung, dass Sie überwacht werden könnten. Wenn Sie sich entfernen, wird Ihnen mitgeteilt, dass Sie
+        höchstwahrscheinlich nicht mehr beobachtet werden.\n
+        Die Standorte der Überwachungskameras wurden von der OpenStreetMap genommen. Es besteht keine Haftung für Richtigkeit. Wenn Sie bemerken, dass eine Kamera fehlt,
+können Sie die Daten jederzeit kostenlos in der OpenStreetMap  verändern. Nutzen Sie dafür zum Beispiel JOSM.\n
+
+        Die App wurde von Kilian Brinkner entwickelt"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="155dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

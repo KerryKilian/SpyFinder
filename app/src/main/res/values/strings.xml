@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SpyFinder</string>
+
+    <string name="access_token" translatable="false">pk.eyJ1Ijoia2VycnlraWxpYW4iLCJhIjoiY2tna3QzMzZnMG1naTMwbmE4ejF0dnFuZiJ9.BXqcjQ4giUcsL1VDzTqPSQ</string>
+    <string name="new_location">Latitude, Longitude</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="linkToGooglePlay"><a href="https://play.google.com/">Dir gefällt die App? Dann bewerte sie!</a></string>
+    <string name="explainText">Ihr Standort und alle in der Nähe befindlichen Überwachungskameras werden lokalisiert.
+        Sobald Sie in die Nähe einer Kamera kommen, erhalten Sie die Meldung, dass Sie überwacht werden könnten. Wenn Sie sich entfernen, wird Ihnen mitgeteilt, dass Sie
+        höchstwahrscheinlich nicht mehr beobachtet werden.\n
+        Die Standorte der Überwachungskameras wurden von der OpenStreetMap genommen. Es besteht keine Haftung für Richtigkeit. Wenn Sie bemerken, dass eine Kamera fehlt,
+        können Sie die Daten jederzeit kostenlos in der OpenStreetMap  verändern.\n
+
+        Die App wurde von Kilian Brinkner entwickelt</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+</resources>

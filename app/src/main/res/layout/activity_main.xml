@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="88dp"
+        android:layout_height="53dp"
+        android:fontFamily="@font/changa_one"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Zurück"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp"
+        mapbox:layout_constraintStart_toStartOf="parent"
+        mapbox:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/noCameras"
+        android:layout_width="236dp"
+        android:layout_height="53dp"
+        android:fontFamily="@font/changa_one"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Keine Standpunkte zu sehen?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14dp"
+        mapbox:layout_constraintEnd_toEndOf="parent"
+        mapbox:layout_constraintHorizontal_bias="0.0"
+        mapbox:layout_constraintStart_toEndOf="@+id/button"
+        mapbox:layout_constraintTop_toTopOf="parent" />
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="411dp"
+        android:layout_height="732dp"
+
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        mapbox:layout_constraintBottom_toBottomOf="parent"
+        mapbox:layout_constraintEnd_toEndOf="parent"
+        mapbox:layout_constraintStart_toStartOf="parent"
+        mapbox:layout_constraintTop_toTopOf="parent"
+        mapbox:mapbox_cameraZoom="16">
+
+    </com.mapbox.mapboxsdk.maps.MapView>
+
+    <TextView
+        android:id="@+id/whatPointsShown"
+        android:layout_width="397dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/changa_one"
+        android:text="In dieser Ansicht werden alle in deiner Nähe befindlichen Kameras angezeigt"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        mapbox:layout_constraintBottom_toBottomOf="parent"
+        mapbox:layout_constraintEnd_toEndOf="parent"
+        mapbox:layout_constraintHorizontal_bias="0.523"
+        mapbox:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="414dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        mapbox:layout_constraintBottom_toTopOf="@+id/whatPointsShown"
+        mapbox:layout_constraintEnd_toEndOf="parent"
+        mapbox:layout_constraintHorizontal_bias="0.666"
+        mapbox:layout_constraintStart_toStartOf="parent">
+
+        <Switch
+            android:id="@+id/allCamerasSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            mapbox:layout_constraintBottom_toTopOf="@+id/whatPointsShown"
+            mapbox:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/changa_one"
+            android:text="  Zeige mir alle Standorte an"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
